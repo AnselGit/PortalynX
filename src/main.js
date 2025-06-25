@@ -31,11 +31,11 @@ const camera = new THREE.OrthographicCamera(
 //moves camera 5 units away trom the center to see the id
 camera.position.set(0,0,5);
 //renderer creation (draws the scene into a canvas using WEBGL)
-const renderer = new THREE.WebGLRenderer();
+const renderer = new THREE.WebGLRenderer({alpha:true});
 //make the canvas fill the whole browserwindow
 renderer.setSize(window.innerWidth, window.innerHeight)
 //set canvas background color
-renderer.setClearColor('skyblue');
+renderer.setClearColor(0x000000,0);
 //adds the canvas into HTML<body>
 document.body.appendChild(renderer.domElement);
 
@@ -63,8 +63,7 @@ const geometry = new THREE.ExtrudeGeometry(shape, extrudeSettings);
 const material = new THREE.MeshStandardMaterial({
     color:'white', 
     metalness: 0.1,      // 0 - non metal, 1 - full metal
-    roughness: 0,        // 0 - super shinny, 1- very rough
-    clearcoat: 1    
+    roughness: 0        // 0 - super shinny, 1- very rough
 });
 
 //combines geometry and material into a visible 3d obj called mesh

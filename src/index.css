@@ -1,16 +1,21 @@
 body {
     margin: 0;
     overflow: hidden;    
+    background-image: url('/assets/frame.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 /* html */
-h1 {
+.title {
     font-family: helvetica;
-    font-size: 300px;
-    color: red;
+    font-size: 125px;
+    color: red;    
     position: absolute;
 }
 
+/* webGL */
 canvas {
     display: block;
 }
