@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    overflow: hidden;    
+}
+
+/* html */
+h1 {
+    font-family: helvetica;
+    font-size: 300px;
+    color: red;
+    position: absolute;
+}
+
+canvas {
+    display: block;
+}
+
