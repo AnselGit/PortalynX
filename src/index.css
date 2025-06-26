@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Vilaka';
+  src: url('/assets/fonts/Vilaka\ Modern\ Serif\ Font.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
     margin: 0;
     overflow: hidden;    
@@ -9,9 +16,9 @@ body {
 
 /* html */
 .title {
-    font-family: helvetica;
-    font-size: 125px;
-    color: red;    
+    font-family: 'Vilaka';
+    font-size: 100px;
+    color: rgb(255, 255, 255);    
     position: absolute;
 }
 
