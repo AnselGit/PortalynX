@@ -28,6 +28,19 @@ const camera = new THREE.OrthographicCamera(
     1000            //far clip (anything farther 1000 is not rendered)
 );
 
+window.addEventListener('resize', () => {
+  const aspect = window.innerWidth / window.innerHeight;
+
+  camera.left = -aspect * zoom;
+  camera.right = aspect * zoom;
+  camera.top = zoom;
+  camera.bottom = -zoom;
+  camera.updateProjectionMatrix();
+
+  renderer.setSize(window.innerWidth, window.innerHeight);
+});
+
+
 //moves camera 5 units away trom the center to see the id
 camera.position.set(0,0,5);
 //renderer creation (draws the scene into a canvas using WEBGL)

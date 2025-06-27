@@ -7,35 +7,42 @@
 
 /* webGL */
 canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
     display: block;
+    z-index: 0;
+    pointer-events: none;
 }
 
+
+/* html */
 html, body {
     height: 100%;
     margin: 0;
-}
-
-body {
-    margin: 0;
-    overflow: hidden;    
+    /* overflow: hidden;     */
     background-image: url('/assets/frame.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-/* html */
-.title {
+#title {
     font-family: 'Vilaka';
     font-size: 100px;
     color: white;    
     position: absolute;
+    z-index: 2;
 }
 
-.container {
-
-    background-color: red;
+.container-fluid {
+    height: 100%;
+    /* background-color: red;     */
+    z-index: 1;
 }
+
 
 
 
