@@ -1,3 +1,6 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+
 @font-face {
   font-family: 'Vilaka';
   src: url('/assets/fonts/Vilaka\ Modern\ Serif\ Font.ttf') format('truetype');
